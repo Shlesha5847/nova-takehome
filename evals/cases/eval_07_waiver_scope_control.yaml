@@ -1,0 +1,10 @@
+name: Waiver scope negative control
+mailbox: data/examples/waived_but_billed/docs
+as_of: '2034-02-28'
+mode: supervised
+expect:
+  key:
+    invoice_id: TX-US-2034-5561
+    class: waived_but_billed
+  verdict: no_finding
+why: Clause 11.2 scope limits waivers to named shipments; waiver for TE33628218 does not apply to TE10597216 on TX-US-2034-5561.

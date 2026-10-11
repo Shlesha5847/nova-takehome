@@ -1,0 +1,39 @@
+{
+ "schema_version": "1.0",
+ "as_of": "2031-02-28",
+ "mode": "supervised",
+ "findings": [],
+ "portfolio": {
+  "cashback": [],
+  "expiry": [],
+  "late_fee_risk": [
+   {
+    "id": "late_fee_risk:CDU-3151571",
+    "class": "late_fee_risk",
+    "variant": "LF-03",
+    "invoice_id": "CDU-3151571",
+    "verdict": "cannot_determine",
+    "amount_usd": null,
+    "amount_range": null,
+    "deadline": "2031-03-10",
+    "action": "draft:request_document",
+    "confidence": 0.5,
+    "evidence": [
+     {
+      "doc": "batch_02/0023.eml#ap-register-2031-02-28.xlsx",
+      "page": 1,
+      "quote": "CDU-3151571 | 2031-02-08 | due 2031-03-10 | USD 690.34 | open | -"
+     }
+    ],
+    "missing_doc": {
+     "name": "Master Services Agreement",
+     "holder": {
+      "party": "Carrier"
+     }
+    },
+    "supersedes": [],
+    "learned_at": null
+   }
+  ]
+ }
+}

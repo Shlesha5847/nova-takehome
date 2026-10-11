@@ -1,0 +1,13 @@
+name: Volume rebate tier calculation
+mailbox: data/examples/cashback/docs
+as_of: '2033-11-30'
+mode: supervised
+expect:
+  key:
+    contract_id: TBX-US-EXP-E58
+    period: 2033-Q2
+    credit_type: rebate
+  verdict: finding
+  amount_usd: '3278.35'
+  action: draft:claim_credit
+why: 2033-Q2 Qualifying Spend reached Tier 1 threshold ($55,000 at 5%), earning a $3,278.35 rebate.

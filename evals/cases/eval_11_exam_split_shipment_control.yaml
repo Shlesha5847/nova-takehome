@@ -1,0 +1,10 @@
+name: Exam carrier split shipment control
+mailbox: data/exam
+as_of: '2031-02-28'
+mode: supervised
+expect:
+  key:
+    invoice_id: CDU-3051304
+    class: duplicate
+  verdict: no_finding
+why: Charges advice CDU-3051304 bills split shipment part CA96669138-H1 under MAWB CA96669138 and must not be flagged as a duplicate.

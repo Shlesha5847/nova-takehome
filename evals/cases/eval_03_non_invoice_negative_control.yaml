@@ -1,0 +1,10 @@
+name: Non-invoice document negative control
+mailbox: data/exam
+as_of: '2030-08-31'
+mode: supervised
+expect:
+  key:
+    invoice_id: CA40312499
+    class: overcharge
+  verdict: no_finding
+why: AWB-CA40312499 is an air waybill attachment, not an invoice, and must not be audited as an invoice finding.

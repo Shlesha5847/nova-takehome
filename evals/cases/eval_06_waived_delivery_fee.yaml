@@ -1,0 +1,12 @@
+name: Written waiver of delivery fee
+mailbox: data/examples/waived_but_billed/docs
+as_of: '2034-02-28'
+mode: supervised
+expect:
+  key:
+    invoice_id: TX-US-2033-5337
+    class: waived_but_billed
+  verdict: finding
+  amount_usd: '133.44'
+  action: draft:dispute
+why: Delivery fee on AWB TE97049901 was waived in writing by Schedule 1 Authorized Person Elspeth Iyengar.

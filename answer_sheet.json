@@ -1,0 +1,70 @@
+{
+ "sheet_version": "1.0",
+ "as_of": "2031-02-28",
+ "mode": "supervised",
+ "source": "exam_report.json",
+ "totals": {
+  "total_overpayment": "0.00",
+  "cashback_owed": "0.00",
+  "late_fees_avoided": "0.00",
+  "total_savings": "0.00"
+ },
+ "classes": {
+  "overcharge": {
+   "count": 0,
+   "amount_usd": "0.00",
+   "ids": [],
+   "amounts_by_id": {}
+  },
+  "duplicate": {
+   "count": 0,
+   "amount_usd": "0.00",
+   "ids": [],
+   "amounts_by_id": {}
+  },
+  "waived_but_billed": {
+   "count": 0,
+   "amount_usd": "0.00",
+   "ids": [],
+   "amounts_by_id": {}
+  },
+  "late_fee_not_owed": {
+   "count": 0,
+   "amount_usd": "0.00",
+   "ids": [],
+   "amounts_by_id": {}
+  },
+  "cashback": {
+   "count": 0,
+   "amount_usd": "0.00",
+   "ids": [],
+   "amounts_by_id": {}
+  },
+  "late_fee_risk": {
+   "count": 0,
+   "amount_usd": "0.00",
+   "ids": [],
+   "amounts_by_id": {},
+   "deadlines_by_id": {}
+  },
+  "expiry": {
+   "count": 0,
+   "amount_usd": null,
+   "ids": [],
+   "amounts_by_id": {},
+   "deadlines_by_id": {}
+  }
+ },
+ "conflicts": [],
+ "cannot_determine": [
+  {
+   "id": "CDU-3151571",
+   "class": "late_fee_risk",
+   "missing_doc": "Master Services Agreement",
+   "holder": {
+    "party": "Carrier"
+   }
+  }
+ ],
+ "mailbox": "exam"
+}

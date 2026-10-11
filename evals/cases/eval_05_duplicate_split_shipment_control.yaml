@@ -1,0 +1,10 @@
+name: Legitimate split shipment control
+mailbox: data/examples/duplicate/docs
+as_of: '2033-08-31'
+mode: supervised
+expect:
+  key:
+    invoice_id: TX-US-2033-5514
+    class: duplicate
+  verdict: no_finding
+why: Invoice TX-US-2033-5514 bills split shipment part TE19536828-H2 under MAWB TE19536828, not a duplicate billing.

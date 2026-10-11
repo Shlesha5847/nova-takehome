@@ -1,0 +1,12 @@
+name: Charges advice format overcharge detection
+mailbox: data/exam
+as_of: '2030-08-31'
+mode: supervised
+expect:
+  key:
+    invoice_id: CDU-3051266
+    class: overcharge
+  verdict: finding
+  amount_usd: '244.37'
+  action: draft:dispute
+why: Charges advice CDU-3051266 overbilled air freight on lane USC1-INW1 (547 kg at 7.16 vs contract rate 6.79).

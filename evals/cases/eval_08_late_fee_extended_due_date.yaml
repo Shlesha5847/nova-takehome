@@ -1,0 +1,12 @@
+name: Late fee billed after authorized extension
+mailbox: data/examples/late_fees/docs
+as_of: '2033-02-28'
+mode: supervised
+expect:
+  key:
+    invoice_id: TX-US-2032-5496
+    class: late_fee_not_owed
+  verdict: finding
+  amount_usd: '12.65'
+  action: draft:dispute
+why: Invoice TX-US-2032-5494 was paid on 2032-08-17, prior to authorized extended due date 2032-08-25 under Clause 10.5.

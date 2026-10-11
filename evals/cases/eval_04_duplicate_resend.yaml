@@ -1,0 +1,12 @@
+name: Exact resend of paid invoice
+mailbox: data/examples/duplicate/docs
+as_of: '2033-08-31'
+mode: supervised
+expect:
+  key:
+    invoice_id: TX-US-2033-5511
+    class: duplicate
+  verdict: finding
+  amount_usd: '1259.23'
+  action: draft:dispute
+why: Exact resend of invoice TX-US-2033-5511 which was already paid on 2033-02-07 per AP register.

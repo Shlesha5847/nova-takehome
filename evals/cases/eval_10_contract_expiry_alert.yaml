@@ -1,0 +1,12 @@
+name: Contract expiry notice window alert
+mailbox: data/examples/expiry/docs
+as_of: '2034-02-28'
+mode: supervised
+expect:
+  key:
+    contract_id: TBX-US-EXP-E24
+    class: expiry
+  verdict: finding
+  deadline: '2034-03-20'
+  action: internal:alert
+why: Contract TBX-US-EXP-E24 term ends on 2034-03-20, within the 60-day notification window from 2034-02-28.

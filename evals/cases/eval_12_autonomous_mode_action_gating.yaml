@@ -1,0 +1,12 @@
+name: Autonomous mode action gating
+mailbox: data/examples/overcharge/docs
+as_of: '2032-08-31'
+mode: autonomous
+expect:
+  key:
+    invoice_id: TX-US-2032-5394
+    class: overcharge
+  verdict: finding
+  amount_usd: '196.92'
+  action: execute:dispute
+why: In autonomous mode, verified findings under $5,000 with complete evidence transition from draft:dispute to execute:dispute.

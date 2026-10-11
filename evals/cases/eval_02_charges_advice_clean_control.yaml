@@ -1,0 +1,10 @@
+name: Charges advice clean control
+mailbox: data/exam
+as_of: '2030-08-31'
+mode: supervised
+expect:
+  key:
+    invoice_id: CDU-3051254
+    class: overcharge
+  verdict: no_finding
+why: Charges advice CDU-3051254 is billed correctly at contract rates and must not trigger an overcharge finding.

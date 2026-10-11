@@ -1,0 +1,93 @@
+{
+ "harness": "harness/harness.py",
+ "passed": 14,
+ "total": 14,
+ "your_cases": 12,
+ "score": 1.0,
+ "cases": [
+  {
+   "case": "eval_01_charges_advice_overcharge.yaml",
+   "name": "Charges advice format overcharge detection",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_02_charges_advice_clean_control.yaml",
+   "name": "Charges advice clean control",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_03_non_invoice_negative_control.yaml",
+   "name": "Non-invoice document negative control",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_04_duplicate_resend.yaml",
+   "name": "Exact resend of paid invoice",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_05_duplicate_split_shipment_control.yaml",
+   "name": "Legitimate split shipment control",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_06_waived_delivery_fee.yaml",
+   "name": "Written waiver of delivery fee",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_07_waiver_scope_control.yaml",
+   "name": "Waiver scope negative control",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_08_late_fee_extended_due_date.yaml",
+   "name": "Late fee billed after authorized extension",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_09_cashback_rebate_tier.yaml",
+   "name": "Volume rebate tier calculation",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_10_contract_expiry_alert.yaml",
+   "name": "Contract expiry notice window alert",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_11_exam_split_shipment_control.yaml",
+   "name": "Exam carrier split shipment control",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "eval_12_autonomous_mode_action_gating.yaml",
+   "name": "Autonomous mode action gating",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "sample_conflict.yaml",
+   "name": "amendment and rate notice disagree",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "sample_overcharge.yaml",
+   "name": "wrong rate on one freight line",
+   "pass": true,
+   "diff": []
+  }
+ ]
+}
